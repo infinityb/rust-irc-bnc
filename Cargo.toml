@@ -1,0 +1,31 @@
+[package]
+name = "irc_bnc"
+version = "0.1.0"
+authors = ["Stacey Ell <stacey.ell@gmail.com>"]
+
+[dependencies]
+bytes = { git = "https://github.com/carllerche/bytes", rev = "7edb577d0a" }
+# hyper = "0.6"
+# libc = "0.1"
+log = "0.3"
+rand = "0.3"
+# rustc-serialize = "0.3"
+time = "0.1"
+toml = "0.1"
+# url = "0.2"
+websocket = "~0.12.2"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+
+[dependencies.irc]
+git = "https://github.com/infinityb/rust-irc"
+
+[dependencies.irc_mio]
+git = "https://github.com/infinityb/rust-irc-mio"
+
+[dependencies.mio]
+git = "https://github.com/carllerche/mio"
+
+[dependencies.dbframe]
+git = "file:///home/sell/dev/lowlevel/dbframe/.git"
